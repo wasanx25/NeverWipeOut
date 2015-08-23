@@ -8,7 +8,7 @@ var rotateZ : float;
 function Update () {
 
   // デバイス（スマホ）の加速度を取得
-  var turn : float = Input.acceleration.z;
+  var turn : float = Input.acceleration.x;
   // var turn : float = Input.GetAxis("Horizontal");
 
   // 現在の回転角度を0～360から-180～180に変換
