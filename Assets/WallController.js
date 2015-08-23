@@ -2,14 +2,14 @@
 
 var minAngle : float = -1;
 var maxAngle : float = 1;
-var speed : float = 5.0;
+var speed : float = 0.01;
 var rotateZ : float;
 
 function Update () {
 
   // デバイス（スマホ）の加速度を取得
-  // var turn : float = Input.acceleration.z;
-  var turn : float = Input.GetAxis("Horizontal");
+  var turn : float = Input.acceleration.z;
+  // var turn : float = Input.GetAxis("Horizontal");
 
   // 現在の回転角度を0～360から-180～180に変換
   if (transform.eulerAngles.z > 180) {
